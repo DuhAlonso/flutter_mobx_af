@@ -16,7 +16,7 @@ class _ModeloObservablePageState extends State<ModeloObservablePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Observable List'),
+        title: const Text('Observable Modelo'),
       ),
       body: Column(
         children: [
@@ -26,11 +26,17 @@ class _ModeloObservablePageState extends State<ModeloObservablePage> {
                 return ListView.builder(
                   itemCount: _controller.products.length,
                   itemBuilder: (context, index) {
-                    final productName = _controller.products[index].name;
-                    return CheckboxListTile(
-                      value: false,
-                      onChanged: (_) {},
-                      title: Text(productName),
+                    final productStore = _controller.products[index];
+                    return Observer(
+                      builder: (_) {
+                        return CheckboxListTile(
+                          value: productStore.selected,
+                          onChanged: (_) {
+                            _controller.selectedProduct(index);
+                          },
+                          title: Text(productStore.product.name),
+                        );
+                      },
                     );
                   },
                 );
