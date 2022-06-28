@@ -20,8 +20,9 @@ abstract class ImcControllerBase with Store {
     required double peso,
     required double altura,
   }) async {
+    double i = 0;
     try {
-      imc = 0.0;
+      imc = i;
       error = null;
       await Future.delayed(const Duration(seconds: 1));
       imc = peso / pow(altura, 2);

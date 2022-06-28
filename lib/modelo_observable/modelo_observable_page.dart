@@ -1,16 +1,17 @@
-import 'package:flu_mobx/observables/observable_list_controller.dart';
+import 'package:flu_mobx/modelo_observable/modelo_observable_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
-class ObservableListPage extends StatefulWidget {
-  const ObservableListPage({Key? key}) : super(key: key);
+class ModeloObservablePage extends StatefulWidget {
+  const ModeloObservablePage({Key? key}) : super(key: key);
 
   @override
-  State<ObservableListPage> createState() => _ObservableListPageState();
+  State<ModeloObservablePage> createState() => _ModeloObservablePageState();
 }
 
-class _ObservableListPageState extends State<ObservableListPage> {
-  final _controller = ObservableListController();
+class _ModeloObservablePageState extends State<ModeloObservablePage> {
+  final _controller = ModeloObservableController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

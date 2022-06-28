@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'observable_list_controller.dart';
+part of 'modelo_observable_controller.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,9 +8,9 @@ part of 'observable_list_controller.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
-mixin _$ObservableListController on ObservableListControllerBase, Store {
+mixin _$ModeloObservableController on ModeloObservableControllerBase, Store {
   late final _$productsAtom =
-      Atom(name: 'ObservableListControllerBase.products', context: context);
+      Atom(name: 'ModeloObservableControllerBase.products', context: context);
 
   @override
   ObservableList<ProductModel> get products {
@@ -25,39 +25,40 @@ mixin _$ObservableListController on ObservableListControllerBase, Store {
     });
   }
 
-  late final _$ObservableListControllerBaseActionController =
-      ActionController(name: 'ObservableListControllerBase', context: context);
+  late final _$ModeloObservableControllerBaseActionController =
+      ActionController(
+          name: 'ModeloObservableControllerBase', context: context);
 
   @override
   void loadProducts() {
-    final _$actionInfo = _$ObservableListControllerBaseActionController
-        .startAction(name: 'ObservableListControllerBase.loadProducts');
+    final _$actionInfo = _$ModeloObservableControllerBaseActionController
+        .startAction(name: 'ModeloObservableControllerBase.loadProducts');
     try {
       return super.loadProducts();
     } finally {
-      _$ObservableListControllerBaseActionController.endAction(_$actionInfo);
+      _$ModeloObservableControllerBaseActionController.endAction(_$actionInfo);
     }
   }
 
   @override
   void addProduct() {
-    final _$actionInfo = _$ObservableListControllerBaseActionController
-        .startAction(name: 'ObservableListControllerBase.addProduct');
+    final _$actionInfo = _$ModeloObservableControllerBaseActionController
+        .startAction(name: 'ModeloObservableControllerBase.addProduct');
     try {
       return super.addProduct();
     } finally {
-      _$ObservableListControllerBaseActionController.endAction(_$actionInfo);
+      _$ModeloObservableControllerBaseActionController.endAction(_$actionInfo);
     }
   }
 
   @override
   void removeProduct() {
-    final _$actionInfo = _$ObservableListControllerBaseActionController
-        .startAction(name: 'ObservableListControllerBase.removeProduct');
+    final _$actionInfo = _$ModeloObservableControllerBaseActionController
+        .startAction(name: 'ModeloObservableControllerBase.removeProduct');
     try {
       return super.removeProduct();
     } finally {
-      _$ObservableListControllerBaseActionController.endAction(_$actionInfo);
+      _$ModeloObservableControllerBaseActionController.endAction(_$actionInfo);
     }
   }
 

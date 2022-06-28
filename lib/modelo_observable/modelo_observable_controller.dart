@@ -1,14 +1,15 @@
 import 'package:flu_mobx/model/product_model.dart';
 import 'package:mobx/mobx.dart';
-part 'observable_list_controller.g.dart';
+part 'modelo_observable_controller.g.dart';
 
-class ObservableListController = ObservableListControllerBase
-    with _$ObservableListController;
+class ModeloObservableController = ModeloObservableControllerBase
+    with _$ModeloObservableController;
 
-abstract class ObservableListControllerBase with Store {
-  @observable
+abstract class ModeloObservableControllerBase with Store {
   // ObservableList products = ObservableList();
-  // ! Também pode ser desse jeito
+// ! Também pode ser desse jeito
+
+  @observable
   var products = <ProductModel>[].asObservable();
 
   @action
