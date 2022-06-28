@@ -14,7 +14,7 @@ class _FuturePageState extends State<FuturePage> {
 
   @override
   void initState() {
-    //_controller.buscarNome();
+    _controller.buscarNome();
     super.initState();
   }
 
@@ -33,7 +33,7 @@ class _FuturePageState extends State<FuturePage> {
       body: Observer(
         builder: (_) {
           return FutureBuilder<String>(
-            future: _controller.buscarNome,
+            future: _controller.nome,
             builder: (context, snapshot) {
               switch (snapshot.connectionState) {
                 case ConnectionState.none:

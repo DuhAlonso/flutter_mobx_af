@@ -7,7 +7,6 @@ abstract class FutureControllerBase with Store {
   @observable
   var nome = Future.value('').asObservable();
 
-  @action
   Future<void> buscarNome() async {
     nome = Future.delayed(const Duration(seconds: 2), () => 'Eduardo Alonso')
         .asObservable();

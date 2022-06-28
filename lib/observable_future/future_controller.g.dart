@@ -25,14 +25,6 @@ mixin _$FutureController on FutureControllerBase, Store {
     });
   }
 
-  late final _$buscarNomeAsyncAction =
-      AsyncAction('FutureControllerBase.buscarNome', context: context);
-
-  @override
-  Future<void> buscarNome() {
-    return _$buscarNomeAsyncAction.run(() => super.buscarNome());
-  }
-
   @override
   String toString() {
     return '''
